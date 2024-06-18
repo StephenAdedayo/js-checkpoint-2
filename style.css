@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+#content{
+    padding:20px;
+    background: red;
+    color: white;
+    max-height: 250px;
+    overflow: hidden;
+    margin: 20px auto;
+    width: 400px;
+
+    -webkit-transition: max-height 0.7s;
+   -moz-transition: max-height 0.7s;
+   transition: max-height 0.7s;
+}
+
+#content.open{
+   max-height: 1000px;
+
+   -webkit-transition: max-height 0.7s;
+   -moz-transition: max-height 0.7s;
+   transition: max-height 0.7s;
+}
+
+#links{
+    display: block;
+    margin: 20px auto;
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    width: fit-content;
+    text-align: center;
+    text-transform: uppercase;   
+}
