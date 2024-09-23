@@ -540,13 +540,15 @@
 // console.log(getFilter(filt));
 
 
-// function startsWith(){
-//     const me = "i started with you"
-//     const tru = me.startsWith("i")
+// const startsWith = (arr) => {
+//     // const me = "i started with you"
+//     const tru = arr.startsWith('i')
+    
 //     return tru
 // }
+// const me = "i started with you"
+// console.log(startsWith('u')); 
 
-// console.log(startsWith()); 
 
 
 // World of DOM
@@ -610,17 +612,98 @@
 // };
 
 
+const setEvent = () => {
+
 let contain = document.getElementById("content")
 let button = document.getElementById("links")
 
-button.onclick = function() {
+ button.onclick = function greet() {
     if(contain.className == "open"){
         // shrink
-        contain.className = ""
+        contain.className = ''
         button.innerHTML = "show more"
     }else {
         // expand
-    contain.className = "open"
+    contain.className = 'open'
     button.innerHTML = "show less"
 }
 }
+
+}
+
+window.onload = () => {
+  setEvent()
+}
+
+// const myMessage = document.getElementById('message')
+
+// const showMessage = () => {
+//     myMessage.classList.toggle("show")
+// }
+
+// setTimeout(showMessage, 2000)
+
+// const colourChanger = document.getElementById('colour-changer')
+
+// const colours = ["red", "blue", "green", "pink" ]
+// let i = 0
+
+// const changerColour = () => {
+//     if(i >= colours.length){
+//         i = 0
+//     }
+
+//     colourChanger.style.background = colours[i]
+//     i++
+// }
+
+// const stopInterval = setInterval(changerColour, 3000)
+
+
+// colourChanger.addEventListener("click", () => {
+//     clearInterval(stopInterval)
+//     colourChanger.innerHTML = "stopped"
+//     colourChanger.setAttribute("style", "text-align:center; display:flex; align-items:center; justify-content: center"
+
+//     )
+// })
+
+// document.addEventListener("DOMContentLoaded", () => {
+    
+// const myForm = document.forms.myForm
+
+// const message = document.getElementById("message")
+
+// myForm.addEventListener("submit", () => {
+//     if(myForm.name.value == ""){
+//         message.innerHTML = "Please enter your name"
+//         message.style.color = "red"
+//         return false
+//     }else{
+//         message.innerHTML = ""
+//         return true
+//     }
+// })
+// })
+
+// var ajala = document.getElementById("content").getElementsByTagName("p")[4]
+
+// var ajala2 = $("#conten p:last-child")
+
+// const newArray = [1,2,3].map(_=>true)
+// return console.log(newArray)
+
+
+// const pounds = [11, 21, 16]
+// const avg = pounds.reduce((total, amount, index, array) => {
+//  total += amount
+//  if (index === array.length - 1) {
+//    return total / array.length
+//  } else {
+//    return total
+//  }
+// }, 0)
+// console.log(avg)
+
+
+
